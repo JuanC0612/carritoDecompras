@@ -9,10 +9,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #000000;
+    color: #FFFFFF;
 }
 img {
-    max-width: 15%;
-}    
+    max-width: 100%;
+}   
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -25,7 +26,7 @@ img {
     display: flex;
     align-items: center;
     min-height: 80vh;
-    padding: 20px 0;
+    padding: 80px 0;
 }
 .menu {
     position: absolute;
@@ -37,7 +38,7 @@ img {
     justify-content: space-between;
 }
 .logo {
-    color: #248eff;
+    color: #0d6efd;
     font-size: 25px;
     font-weight: 800;
     text-transform: uppercase;
@@ -54,7 +55,7 @@ img {
     display: block;
 }
 .menu .navbar ul li a:hover {
-    color: #248eff;
+    color: #0d6efd;
 }
 #menu {
     display: none;
@@ -79,7 +80,7 @@ img {
     margin-bottom: 25px;
 }
 .header-txt span {
-    color: #248eff;
+    color: #ffffff;
 }
 .header-txt p {
     font-size: 17px;
@@ -92,7 +93,7 @@ img {
 .btn-1 {
     display: inline-block;
     padding: 11px 35px;
-    border: 2px solid #248eff;
+    border: 2px solid #0d6efd;
     border-radius: 25px;
     margin-right: 25px;
     font-size: 17px;
@@ -101,7 +102,7 @@ img {
 .btn-2 {
     display: inline-block;
     padding: 11px 35px;
-    border: 2px solid #248eff;
+    border: 2px solid #0d6efd;
     border-radius: 25px;
     margin-right: 25px;
     font-size: 17px;
@@ -110,24 +111,23 @@ img {
 .btn-3 {
         display: inline-block;
     padding: 11px 35px;
-    border: 2px solid #248eff;
+    border: 2px solid #0d6efd;
     border-radius: 25px;
     margin-right: 25px;
     font-size: 17px;
     color: #FFFFFF;
 }
 .btn-1:hover {
-    background-color: #248eff;
+    background-color: #0d6efd;
 }
 .popular {
     padding: 100px 0;
     text-align: center;
 }
 h2 {
-    color: #248eff;
+    color: #FFFFFF;
     font-size: 35px;
     margin-bottom: 45px;
-    text-align: center center;
 }
 .popular-content {
     display: flex;
@@ -136,26 +136,21 @@ h2 {
 .popular-content img {
     width: 150px;
 }
-.product-content {
+.Popular-Container {
     display: grid;
-    grid-template-columns: repeat(1,4fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 50px;
+    background-color: black;
 }
 .product-1 {
-    background-color: #248eff;
+    background-color: #3a2222;
 }
 .product-txt {
     padding: 50px 30px;
-    text-align: center;
-}
-p {
-    font-size: 20px;
-    color: #248eff;
-    margin-bottom: 20px;
 }
 h3 {
     font-size: 20px;
-    color: #248eff;
+    color: #FFFFFF;
     margin-bottom: 20px;
 }
 .price {
@@ -165,11 +160,11 @@ h3 {
 }
 .price p {
     font-size: 17px;
-    color: #248eff;
+    color: #ff0000;
 }
 .btn-2 {
     padding: 5px 25px;
-    background-color: #248eff;
+    background-color: #0d6efd;
     margin-right: 0;
 }
 .contact {
@@ -181,6 +176,9 @@ h3 {
     padding: 50px;
     border-radius: 50px;
 }
+.contact.container {
+    background-color: black;
+}
 form {
     display: flex;
     justify-content: center;
@@ -188,7 +186,7 @@ form {
 }
 input {
     padding: 18px 25px;
-    background-color: #248eff;
+    background-color: #0d6efd;
     border: 0;
     border-radius: 25px;
     outline: none;
@@ -201,9 +199,15 @@ input {
     font-size: 17px;
 }
 .btn-3 {
-    background-color: #248eff;
+    background-color: #0d6efd;
     cursor: pointer;
     margin-right: 0;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
 }
 .link ul {
     display: flex;
@@ -214,7 +218,7 @@ input {
     margin-right: 20px;
 }
 .link ul li > a:hover {
-    color: #248eff;
+    color: #ff00f2;
 }
 @media(max-width:991px) {
     .menu {
@@ -228,7 +232,7 @@ input {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #248eff;
+        background-color: #ff00c8;
         display: none;
     }
     .menu .navbar ul li a:hover {
@@ -273,6 +277,7 @@ input {
     }
     .contact {
         padding: 30px;
+        background-color: blac;
     }
     form {
         flex-direction: column;
@@ -280,7 +285,11 @@ input {
     input {
         margin: 0 0 20px 0;
     }
-       .link ul {
-        margin-top: 20px;
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .link ul {
+        margin-top:20px;
     }
 }
