@@ -37,6 +37,16 @@ img {
     align-items: center;
     justify-content: space-between;
 }
+
+
+#carrito {
+    width: 55px;
+    height: 55px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+
 .logo {
     color: #0d6efd;
     font-size: 25px;
@@ -292,4 +302,9 @@ input {
     .link ul {
         margin-top:20px;
     }
+}
+
+
+#carrito >table >tbody {
+    width: 100px;
 }
