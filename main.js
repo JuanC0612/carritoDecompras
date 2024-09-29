@@ -1,8 +1,40 @@
+//funcion para cargar perezosamente las imagenes 
+//por aitageo
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('img[data-src]');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const img = entry.target;
+            if (entry.isIntersecting) {
+                console.log('elemento interceptado');
+                
+                img.setAttribute('src', img.getAttribute('data-src')); 
+                img.style.opacity = 1;
+                img.classList.add('animate__animated', 'animate__swing'); 
+                observer.unobserve(img); 
+            } else {
+                img.style.opacity = 0;
+            }
+        });
+    });
+
+    images.forEach((image) => {
+        observer.observe(image);
+    }, {threshold: 1.0});
+});
+
+
+
+
+
 const carrito = document.getElementById('carrito');
 const contenedor = document.querySelector('.Popular-Container');
-console.log(contenedor);
+// console.log(contenedor);
 const contenedorCarrito = document.getElementById('lista-carrito').querySelector('tbody');
-console.log(contenedorCarrito);
+// console.log(contenedorCarrito);
 
 let carritoAll = []
 
@@ -73,7 +105,7 @@ function ActualizarCarritoHtml(){
           <td>${id}</td>
           `;
         })
-        contenedorCarrito.appendChild(row)
-
-
+        contenedorCarrito.appendChild(row);
 }
+
+

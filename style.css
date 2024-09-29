@@ -58,11 +58,12 @@ img {
     float: left;
 }
 .menu .navbar ul li a {
-    font-size: 18px;
+    font-size: 25px;
     padding: 20px;
     color: #FFFFFF;
-    font-weight: 600;
+    font-weight: 700;
     display: block;
+    text-decoration: none;
 }
 .menu .navbar ul li a:hover {
     color: #0d6efd;
@@ -230,6 +231,42 @@ input {
 .link ul li > a:hover {
     color: #ff00f2;
 }
+
+.modal-content{
+    width: 350px;
+    height: 350px;
+  }
+  
+  
+  #carrito >table >tbody {
+      width: 100px;
+  }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.footer {
+    background-color: #000000;
+
+}
+
+.footer p {
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+
+
+
+
+
+/* Responsive */
 @media(max-width:991px) {
     .menu {
         padding: 20px;
@@ -304,7 +341,3 @@ input {
     }
 }
 
-
-#carrito >table >tbody {
-    width: 100px;
-}
